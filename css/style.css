@@ -1,0 +1,67 @@
+:root{
+	--pink : rgb(250, 30, 61);
+	--grey : #222222;
+}
+/*global css*/
+*,ul{
+	margin: 0;
+	padding: 0;
+}
+body{font-family: 'Oswald', sans-serif;}
+a{text-decoration: none;}
+.active{color: var(--pink);}
+.line{width: 200px;background-color: var(--pink);height: 3px;margin-top: 16px;}
+
+/*header section css*/
+header{width: 280px;height: 100vh;background-color: #000;position: fixed;left: 0;text-align: center;}
+header .logo{padding: 60px 0}
+header nav ul{margin-bottom: 40px}
+header nav ul li{margin-bottom: 8px}
+header nav ul li a{font-size: 17px;text-transform: uppercase;font-weight: 500;color: white;}
+header nav ul li a:hover{color: var(--pink)}
+header nav button{padding: 12px 26px;background-color: var(--grey);color: #fff;font-size: 17px;text-transform: uppercase;}
+header nav button i{margin-left: 6px;font-weight: 600;font-size: 18px}
+header .navicons{position: absolute;width: 100%;bottom: 20px;}
+header .navicons ul li{list-style: none;display: inline-block;margin: 0 12px}
+header .navicons ul li a i{color: white}
+
+main{width: calc(100% - 280px);margin-left: auto;}
+
+.banner{z-index:99;position:relative;height:100vh;width: 100%;background-image: url(../img/bannerbg.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;background-attachment: scroll;}
+.banner .row{align-items: center;height: 100vh}
+.banner .b-content{}
+.banner .b-content h5{color: white;font-size: 24px;text-transform: uppercase;letter-spacing: 4px;margin-bottom: 24px}
+.banner .b-content h1,.history .h-content h2,.posts .section-title h2{font-size: 60px;color: var(--pink);text-transform: uppercase;font-weight: 600;margin-bottom: 42px}
+.banner .b-content p{font-size: 20px;color: white;font-weight: 300;margin-bottom: 42px}
+.theme-btn{background: var(--pink);color: white;padding: 12px 32px;text-transform: uppercase;font-size: 17px;display: inline-block;}
+
+
+.b-extra{width: 100%;margin-top: -150px;background-color: var(--grey);}
+.b-extra .eb-content{background-color: white;position: relative;z-index: 9999}
+.b-extra .eb-content .bg-img{background-image: url(../img/football2_pic20.jpg);background-size: cover;background-position: center;background-repeat: no-repeat;}
+.b-extra .eb-content h6{background-color: black;color: white;text-transform: uppercase;padding: 12px}
+.b-extra .eb-content h5{font-size: 14px;color: #1a1a1a;text-transform: uppercase;margin-top: 16px}
+.b-extra .eb-content p{font-size: 17px;color: #1a1a1a;font-weight: 300;padding-top: 16px}
+.b-extra .eb-content a{font-size: 17px;text-transform: uppercase;color: var(--pink);font-weight: 300}
+.b-extra .eb-content a:hover{text-decoration: underline;}
+.b-extra .p-5 {padding: 42px!important;}
+.b-extra .bg-img img{right: 0;top: 50%;transform: translateY(-50%);}
+
+.history{width: 100%;background-color: var(--grey);padding: 100px 0}
+.history .h-content h4,.posts .section-title h3{font-size: 24px;text-transform: uppercase;line-height: 34px;letter-spacing: 5px;color: white;font-weight: 400}
+.history .h-content h2{}
+.history .h-content p{font-size: 17px;color: white;margin-bottom: 32px}
+
+.posts{width: 100%;padding: 80px 0;background-color: var(--grey);}
+.posts .section-title{text-align: center;}
+.posts .p-item{position: relative;}
+.posts .p-item::after{content: "";position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0,0,0,.2);opacity: 0;transition: all 0.6s ease-out;}
+.posts .p-item:hover::after{opacity: 1}
+.posts .p-content{padding: 0px 0 10px 30px;position: absolute;bottom: 0px;left: 0px;right: 0px;transition: 0.5s;background: url(../img/blog_masonry_tile_gradient.png) top left repeat-x;}
+.posts .p-content span{color: rgba(255, 255, 255, 0.7);margin-right: 8px}
+.posts .p-content span i{margin-right: 4px}
+.posts .p-content .post-title h2 a{font-size: 40px;color: white;text-transform: uppercase;font-weight: 600}
+.posts .p-content .line{width: 0;transition: 0.5s}
+.posts .p-item:hover .line{width: 200px;transition: 0.5s}
+.posts .p-item:hover .p-content{padding-bottom: 30px;transition: 0.5s}
+.right-posts .post-title a{font-size: 24px !important;font-weight: 300 !important;letter-spacing: 5px}
